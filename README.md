@@ -1,43 +1,50 @@
-# CorrectiveRAG
+# 🤖 CorrectiveRAG — AI That Retrieves, Thinks, and Corrects
 
-CorrectiveRAG is a Retrieval-Augmented Generation (RAG) project that leverages LangChain, LangGraph, and advanced AI models to perform intelligent document retrieval and generation. The system loads data from web sources, processes it with language models, and uses embeddings and vector stores to enhance retrieval capabilities.
+**CorrectiveRAG** is an advanced Retrieval-Augmented Generation (RAG) system designed to intelligently retrieve and generate answers from web and document-based sources using state-of-the-art LLMs, embeddings, and graph-based agents.
 
-## Architecture
+It leverages tools like **LangChain**, **LangGraph**, **Groq LLM**, **Google GenAI embeddings**, and **ChromaDB** to create a robust, modular, and production-ready RAG pipeline.
 
-The architecture of CorrectiveRAG is illustrated in the following diagram:
+---
 
-![Architecture Workflow](../Workflow.png)
+## 🧭 Architecture Overview
 
-This workflow demonstrates the data loading, processing, embedding, and retrieval steps that form the core of the RAG system.
+Below is the workflow representing how CorrectiveRAG operates internally:
 
-## Technology Stack
+![Architecture Workflow](./workflow.png)
 
-The project uses the following technology stack:
+This flow includes:
 
-- **LangChain & LangGraph** for building language model applications and graph-based workflows.
-- **Google Generative AI Embeddings** for creating semantic embeddings.
-- **Groq LLM** for chat-based language modeling.
-- **ChromaDB** as the vector store for efficient similarity search.
-- **Tavily** for web search tool integration.
-- **Python-dotenv** for environment variable management.
-- **FastAPI, Uvicorn, Streamlit** (optional) for serving and UI.
+- 📰 Data ingestion from files or web
+- 🧩 Chunking and embedding using **Google GenAI**
+- 🧠 Multi-agent routing using **LangGraph**
+- 🗃️ Vector similarity search with **ChromaDB**
+- 🤖 Fast inference via **Groq LLM**
+- 🌐 Optional web context from **Tavily Search**
 
-### Stack Images
+---
 
-Below are images representing the main technologies used in the project:
+## ⚙️ Technology Stack
 
-![LangChain Logo](./images/langchain.png)  
-![Groq Logo](./images/groq.png)  
-![ChromaDB Logo](./images/chromadb.png)  
-![Google Generative AI Logo](./images/google-genai.png)  
+CorrectiveRAG combines the best of open-source AI tooling and cloud-scale inference:
 
-*(Note: Replace the above image paths with actual images in the `images` folder.)*
+| Technology              | Purpose                                       | Logo |
+|-------------------------|-----------------------------------------------|------|
+| **LangChain**           | LLM framework & memory management             | ![LangChain Logo](./images/langchain.png) |
+| **LangGraph**           | Graph-based multi-agent orchestration         | ![LangGraph Logo](./images/langgraph.png) |
+| **Groq LLM**            | High-speed inference with low latency         | ![Groq Logo](./images/groq.png) |
+| **Google GenAI**        | Semantic text embeddings for similarity search| ![Google Generative AI Logo](./images/google-genai.png) |
+| **ChromaDB**            | Vector store for document chunks              | ![ChromaDB Logo](./images/chromadb.png) |
+| **Tavily**              | Real-time web search integration              | ![Tavily Logo](./images/tavily.png) |
 
-## Installation
+> ✅ Ensure the `images/` directory includes these logos for proper rendering in GitHub.
 
-To set up the project locally, follow these steps:
+---
 
-1. Clone the repository:
+## 🚀 Installation Guide
+
+Follow the steps below to set up CorrectiveRAG locally:
+
+### 1. 📦 Clone the Repository
 
 ```bash
 git clone <repository-url>
