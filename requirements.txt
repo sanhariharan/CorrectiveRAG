@@ -1,0 +1,33 @@
+# Core LangChain and LangGraph
+langchain>=0.1.20
+langgraph>=0.0.39
+
+# Embeddings: Gemini (Google)
+langchain-google-genai>=0.0.6
+
+# Vector Store: ChromaDB
+chromadb>=0.4.24
+
+# Tavily Web Search Tool
+langchain-community>=0.0.28
+tavily-python>=0.3.0  # ✅ Correct package name
+
+# LLM Provider: Groq for LLaMA 3 / DeepSeek
+groq>=0.4.2
+langchain_groq>=0.0.2  # ✅ Correct package name
+
+# Environment and Logging
+python-dotenv>=1.0.1
+rich>=13.7.1
+
+# Optional (but useful)
+fastapi>=0.110.0
+uvicorn>=0.29.0
+streamlit>=1.35.0
+
+# LangChain Tools and Utilities
+langchainhub>=0.1.15
+langchain-core>=0.1.51
+
+# Compatibility
+pydantic<2.0.0  # ✅ LangChain core still relies on Pydantic v1
