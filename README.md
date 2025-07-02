@@ -10,7 +10,7 @@ It leverages tools like **LangChain**, **LangGraph**, **Groq LLM**, **Google Gen
 
 Below is the workflow representing how CorrectiveRAG operates internally:
 
-![Architecture Workflow](./workflow.png)
+![Architecture Workflow](./Workflow.png)
 
 This flow includes:
 
